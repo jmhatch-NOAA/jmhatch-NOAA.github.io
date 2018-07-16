@@ -1,0 +1,97 @@
+/* padding for navbor logo */
+.navbarLogo {
+	padding: 15px;
+	margin-right: 10px;
+}
+
+/* add padding to the top of <body>, otherwise navbar will overlay contents */
+body { 
+    padding-top: 104px;
+}
+
+/* active navbar-btn state */
+.navbar-btn-active {
+	background-color: #01A1E0;
+    color: #fff;
+	border-radius: 0px;
+}
+
+.navbar-btn-active:hover {
+    color: #fff;
+}
+
+.navbar-btn-active.focus, .navbar-btn-active:focus {
+    color: #fff;	
+}
+
+/* inactive navbar-btn state */
+.navbar-btn-inactive {
+    color: #fff;
+}
+
+.navbar-btn-inactive:hover {
+    color: #01A1E0;
+}
+
+.navbar-btn-inactive.focus, .navbar-btn-inactive:focus {
+    color: #fff;	
+}
+
+/* jumbotron adjustments */
+.jumbotron {
+	background-image: url(../images/jumbo_flop.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.jumbotron-row {
+	background-image: url(../images/congruent_outline.png);
+}
+
+/* footer adjustments */
+.footer {
+	background-image: url(../images/congruent_outline.png);
+	padding-top: 50px;
+}
+
+/* glyphicon sizes */
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+/* row adjustment */
+.pad {
+	padding: 40px;
+}
+
+/* progress bar adjustment */
+.table > tbody > tr > td {
+    vertical-align: middle !important;
+}
+
+.table > tbody > tr > td > .progress {
+	min-width: 200px;
+	min-height: 20px;
+	overflow-x: visible;
+    white-space: nowrap;
+    margin-bottom: 0px !important;
+	background-color: #999999;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* about.html img adjustment */
+.img-about {
+	margin: 10px auto;
+}
+
+/* content that is the entire width of the screen */
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
