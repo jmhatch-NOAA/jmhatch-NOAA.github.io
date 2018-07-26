@@ -25,15 +25,6 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
 					templateUrl: 'views/about.html'
 				}
 			}
-		})
-    
-    	.state('app.shiny', {
-			url:'shiny',
-			views: {
-				'content@': {
-					templateUrl: 'views/shiny.html'
-				}
-			}
 		});
 	
     $urlRouterProvider.otherwise('/');
