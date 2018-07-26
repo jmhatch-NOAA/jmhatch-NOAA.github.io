@@ -12,7 +12,7 @@
 // END CONFIGURATION //
 ///////////////////////
 
-    var embeddedApp = window.parent.document.getElementById("embedded-app");
+    var embeddedApp = document.getElementById("embedded-app");
 
     function resizeIframe(pixels) {
         embeddedApp.style.height = pixels + "px";
