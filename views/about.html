@@ -1,0 +1,76 @@
+<div class="container">
+	<div class="row pad">	
+		<div class="col-xs-12 text-center">
+			<h2>FY 18-20 National Protected Species Toolbox Initiative</h2>
+			<a class="btn btn-info" href="https://www.st.nmfs.noaa.gov/protected-species-science/Science-Communication-and-Coordination/toolbox" role="button">Learn more <span class="fa fa-angle-double-right fa-1x"></span></a>
+		</div>
+	</div>
+	<div class="row pad">	
+		<div class="col-xs-10 col-xs-push-1 text-center pad panel panel-info">	
+			<div class="panel-heading">
+				<h3><strong>Analysis &amp; Applications to Improve Protected Species Assessments in the Greater Atlantic Region</strong></h3>
+			</div>
+			<br>
+			<h4>In collaboration with:</h4>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 text-center">
+						<a href="https://www.umassd.edu/smast/"><img style="background-color: #fff; border-color: #fff;" class="img-thumbnail img-about" src="images/umassd.jpeg"/></a>
+					</div>
+					<div class="col-xs-12 col-md-4 text-center">
+						<a href="http://coonamessettfarmfoundation.org/"><img class="img-circle img-about" src="images/cff.jpg"/></a>
+					</div>
+					<div class="col-xs-12 col-md-4 text-center">
+						<a href="https://www.gfdl.noaa.gov/"><img class="img-circle img-about" src="images/gfdl.png"/></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<blockquote class="blockquote text-left" style="margin-top: 40px; margin-bottom: 0px;">
+				<p>By working together with governmental and research partners, the Sea Turtle Ecology &amp; Population Dynamics group of the PSB (Protected Species Branch), NEFSC (Northeast Fisheries Science Center), NMFS (National Marine Fisheries Service) proposes to develop a set of analysis and web applications that will improve protected species assessments in the Greater Atlantic Region (Maine through Cape Hatteras, North Carolina). This information will aid the <a href="https://www.greateratlantic.fisheries.noaa.gov/Protected/seaturtles/">Greater Atlantic Regional Fisheries Office (GARFO) Sea Turtle Program</a>, which works to conserve and rebuild populations of sea turtles in U.S. Northeast and mid-Atlantic waters.</p>
+			</blockquote>
+		</div>
+	</div>
+</div>
+<div class="jumbotron-row">
+	<div class="container">
+		<div class="row pad">
+			<div class="col-xs-12 col-md-4 text-center">
+				<a href="https://github.com/PSB-Turtle"><img class="img-circle" src="images/code_icon.png" onmouseover="this.src='images/code_icon_rev.png';" onmouseout="this.src='images/code_icon.png';" alt="code icon"></a>
+				<h2>Code</h2>
+			</div>
+			<div class="col-xs-12 col-md-4 text-center">
+				<a ui-sref="app.shiny"/><img class="img-circle" src="images/stats_icon.png" onmouseover="this.src='images/stats_icon_rev.png';" onmouseout="this.src='images/stats_icon.png';" alt="pie chart icon"></a>
+				<h2>Web<br>Application</h2>
+			</div>
+			<div class="col-xs-12 col-md-4 text-center">
+				<img class="img-circle" src="images/map_icon.png" onmouseover="this.src='images/map_icon_rev.png';" onmouseout="this.src='images/map_icon.png';" alt="map icon">
+				<h2>Mapping</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row pad">
+		<h2 class="text-left">Progress</h2>
+		<br>
+		<div class="row">
+			<div class="col-xs-12" style="overflow: auto;">
+				<table class="table table-striped table-hover" ng-controller="ProgressCtrl">
+					<tr>
+						<th>Task</th><th>Target completion date</th><th>Milestone</th><th>Percent complete</th>
+					</tr>
+					<tr ng-repeat="i in milestones">
+						<td>{{i.task}}</td>
+						<td>{{i.date}}</td>
+						<td>{{i.milestone}}</td>
+						<td>
+							<uib-progressbar class="progress-striped" min="0" max="100" value="i.percent" type="{{i.type}}"></uib-progressbar>
+							<span>{{i.percent}}%</span>
+        				</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
