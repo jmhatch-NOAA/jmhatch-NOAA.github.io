@@ -1,0 +1,38 @@
+<header>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container" ng-controller="NavbarBtnCtrl">
+			<div class="navbar-header">
+				<a class="navbar-brand navbarLogo" ng-click="setActive('app')" ui-sref="app" title="PSB-Turtle">
+					<img src="images/navLogo.png" alt="PSB-Turtle"/>
+				</a>
+				<button class="navbar-toggle" type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" uib-collapse="navCollapsed">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="btn-group">
+							<a class="btn navbar-btn" ng-class="isActive('app') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app')" ui-sref="app"><span class="glyphicon glyphicon-home gi-1x"></span> Home</a>
+							<a class="btn navbar-btn" ng-class="isActive('app.about') || isActive('app.shiny') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app.about')" ui-sref="app.about"><span class="glyphicon glyphicon-info-sign gi-1x"></span> About</a>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Sea Turtle Ecology <br>&amp; Population Dynamics</h1>
+					<p>The Sea Turtle Ecology and Population Dynamics group at the NEFSC is tasked with collecting information from sea turtles, analyzing data, and building statistical and simulation models to better understand the ecology of sea turtles in our region.</p>
+					<a class="btn btn-info" style="text-shadow: 0px 0px;" href="https://www.nefsc.noaa.gov/psb/turtles/" role="button">Learn more <span class="fa fa-angle-double-right fa-1x"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
