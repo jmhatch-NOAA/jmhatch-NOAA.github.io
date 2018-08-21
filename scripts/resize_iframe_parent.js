@@ -6,7 +6,7 @@
 
     // this should be the root URL of the child frame (Shiny app) which you want
     // to allow to send messages to the parent
-    var allowedOrigin = "https://psb-turtle.shinyapps.io";
+    var allowedOrigin = "http://shiny1.nefsc.noaa.gov:3838/";
 
 ///////////////////////
 // END CONFIGURATION //
