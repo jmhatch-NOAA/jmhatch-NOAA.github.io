@@ -49,7 +49,7 @@ angular.module('seaturtleApp')
 			}, {
  				task: "2.3", date: "09/2020", milestone: "Submit to Center review a manuscript using climate change scenarios to project loggerhead turtle distributions in the U. S. mid-Atlantic.", percent: 0, type: "info"
             }, {
-				task: "3.1", date: "07/2018", milestone: "Complete R Shiny application for track reconstruction using a CTCRW model as described in Winton et al. (2018).  Still need to perform testing.", percent: 75, type: "info" 
+				task: "3.1", date: "07/2018", milestone: "Complete R Shiny application for track reconstruction using a CTCRW model as described in Winton et al. (2018).  Still need to perform testing.", percent: 100, type: "info" 
 			}, {
 				task: "3.2", date: "12/2018", milestone: "Using the developed R Shiny app, filter 166 satellite tags deployed on large juvenile and adult loggerheads from 2009-2017.", percent: 0, type: "info" 				
 			}, {
