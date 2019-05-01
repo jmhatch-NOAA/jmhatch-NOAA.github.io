@@ -37,7 +37,7 @@ angular.module('seaturtleApp')
 			$scope.milestones = [{
 				task: "1.1", date: "06/2018", milestone: "Meet with GARFO to coordinate on joint GARFO-NEFSC efforts to create rasters of commercial fishing effort.", percent: 100, type: "info" 
 			}, {
-				task: "1.2", date: "09/2019", milestone: "Complete preparation of commercial fishing effort raster layers (for case study and other possible fisheries).", percent: 20, type: "info" 				
+				task: "1.2", date: "09/2019", milestone: "Complete preparation of commercial fishing effort raster layers (for case study and other possible fisheries).", percent: 25, type: "info" 				
 			}, {
  				task: "1.3", date: "03/2020", milestone: "Submit to Center review a manuscript describing the spatial-temporal overlap analysis.", percent: 0, type: "info"
 			}, {                  
