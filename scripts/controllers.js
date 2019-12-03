@@ -45,7 +45,7 @@ angular.module('seaturtleApp')
 			}, {
 				task: "2.2", date: "05/2019", milestone: "Assemble OISST monthly composites synced to a spatial grid from 1982-2018.", percent: 100, type: "info" 				
 			}, {
- 				task: "2.3", date: "08/2019", milestone: "Forecast / hindcast the loggerhead distribution in relation to SST and depth using the fitted model.", percent: 0, type: "info"
+ 				task: "2.3", date: "08/2019", milestone: "Forecast / hindcast the loggerhead distribution in relation to SST and depth using the fitted model.", percent: 100, type: "info"
             }, {
  				task: "2.4", date: "09/2020", milestone: "Submit to Center review a manuscript using climate change scenarios to project loggerhead turtle distributions in the U. S. mid-Atlantic.", percent: 0, type: "info"
             }, {
