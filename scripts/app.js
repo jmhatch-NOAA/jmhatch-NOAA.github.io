@@ -37,7 +37,7 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
 		})
 	
        		.state('app.terms', {
-			url:'shiny',
+			url:'terms',
 			views: {
 				'content@': {
 					templateUrl: 'views/terms.html'
