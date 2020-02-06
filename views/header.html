@@ -15,7 +15,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<form class="btn-group">
-							<a class="btn navbar-btn" ng-class="isActive('app') || isActive('app.terms') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app')" ui-sref="app"><span class="glyphicon glyphicon-home gi-1x"></span> Home</a>
+							<a class="btn navbar-btn" ng-class="isActive('app') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app')" ui-sref="app"><span class="glyphicon glyphicon-home gi-1x"></span> Home</a>
 							<a class="btn navbar-btn" ng-class="isActive('app.about') || isActive('app.shiny') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app.about')" ui-sref="app.about"><span class="glyphicon glyphicon-info-sign gi-1x"></span> About</a>
 						</form>
 					</li>
