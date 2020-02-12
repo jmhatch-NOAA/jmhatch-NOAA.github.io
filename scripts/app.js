@@ -1,6 +1,6 @@
-var app = angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap']);
+angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
 
-app.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('app', {
