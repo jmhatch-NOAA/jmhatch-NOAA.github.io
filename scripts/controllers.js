@@ -6,7 +6,6 @@ angular.module('seaturtleApp')
 		.controller('NavbarBtnCtrl', function($scope, $state) {
 	
 			// set default active state to home
-	  		$scope.state = $state;
 			$scope.active = $state.current.name;
 	
 			// function to set active state
