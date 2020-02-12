@@ -3,19 +3,19 @@
 angular.module('seaturtleApp')
 
 	// controller for Navbar buttons
-	.controller('NavbarBtnCtrl', function($scope, $state) {
+	.controller('NavbarBtnCtrl', function($scope, $rootScope, $state) {
 
 		// set default active state to home
-		$scope.active = $state.current.name;
+		$rootScope.active = $state.current.name;
 
 		// function to set active state
 		$scope.setActive = function(type) {
-			$scope.active = type;
+			$rootScope.active = type;
 		};
 
 		// function to determine active state
 		$scope.isActive = function(type) {
-			return type === $scope.active;
+			return type === $rootScope.active;
 		};
 
 	})
@@ -46,8 +46,4 @@ angular.module('seaturtleApp')
 			task: "3.4", date: "09/2020", milestone: "Prepare a NMFS webpage which dynamically illustrates climate change scenarios and projected loggerhead distribution.  Webpage to go live when related manuscript published.", percent: 50, type: "info"
 		}];
 
-	});
-
-	$scope.$on('$stateChangeSuccess', function () {
-		$scope.active = '/';
 	});
