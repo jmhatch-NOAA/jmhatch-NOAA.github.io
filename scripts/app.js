@@ -48,3 +48,7 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
     $urlRouterProvider.otherwise('/');
 	
 });
+
+.run(function($rootScope, App, $state) {
+	$rootScope.App = App;
+});
