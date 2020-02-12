@@ -7,7 +7,6 @@ angular.module('seaturtleApp')
 	
 			// set default active state to home
 			$scope.active = $state.current.name;
-			console.log($state.current.name);
 	
 			// function to set active state
 			$scope.setActive = function(type) {
