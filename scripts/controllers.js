@@ -2,16 +2,6 @@
 
 angular.module('seaturtleApp')
 
-		// controller for scrolling to the top
-		.controller('ScrollCtrl', ['$scope', '$anchorScroll', function ($scope, $anchorScroll) {
-			
-			// scroll to the top
-			$scope.backToTop = function () {
-				$anchorScroll();
-			};
-			
-		}])
-
 		// controller for Navbar buttons
 		.controller('NavbarBtnCtrl', function($scope, $state) {
 	
