@@ -47,3 +47,7 @@ angular.module('seaturtleApp')
             		}];
 	
 		});
+
+$scope.$on('$stateChangeSuccess', function () {
+	$scope.active = $state.current.name;
+});
