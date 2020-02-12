@@ -11,6 +11,9 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
                 },
 		'content': {
 			templateUrl : 'views/home.html'
+		},
+		'footer' : {
+			templateUrl : 'views/footer.html'
 		}
             }
         })
