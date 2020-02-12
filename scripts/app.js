@@ -15,8 +15,7 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
 		'footer' : {
 			templateUrl : 'views/footer.html'
 		}
-            },
-	    active: true
+            }
         })
 	
 	.state('app.about', {
