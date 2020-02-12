@@ -7,43 +7,40 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
             url:'/',
             views: {
                 'header': {
-                    templateUrl : 'views/header.html'
+			templateUrl : 'views/header.html'
                 },
-				'content': {
-					templateUrl : 'views/home.html'
-				},
-				'footer' : {
-					templateUrl : 'views/footer.html'
-				}
+		'content': {
+			templateUrl : 'views/home.html'
+		}
             }
         })
 	
-		.state('app.about', {
-			url:'about',
-			views: {
-				'content@': {
-					templateUrl: 'views/about.html'
-				}
+	.state('app.about', {
+		url:'about',
+		views: {
+			'content@': {
+				templateUrl: 'views/about.html'
 			}
-		})
-    
-    		.state('app.shiny', {
-			url:'shiny',
-			views: {
-				'content@': {
-					templateUrl: 'views/shiny.html'
-				}
+		}
+	})
+
+	.state('app.shiny', {
+		url:'shiny',
+		views: {
+			'content@': {
+				templateUrl: 'views/shiny.html'
 			}
-		})
-	
-       		.state('app.terms', {
-			url:'terms',
-			views: {
-				'content@': {
-					templateUrl: 'views/terms.html'
-				}
+		}
+	})
+
+	.state('app.terms', {
+		url:'terms',
+		views: {
+			'content@': {
+				templateUrl: 'views/terms.html'
 			}
-		});
+		}
+	});
 	
     $urlRouterProvider.otherwise('/');
 	
