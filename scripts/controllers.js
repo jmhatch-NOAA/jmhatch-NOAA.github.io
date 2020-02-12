@@ -20,6 +20,16 @@ angular.module('seaturtleApp')
 
 	})
 
+	// controller for Navbar buttons in Footer
+	.controller('FooterBtnCtrl', function($scope, $rootScope) {
+
+		// function to set active state
+		$scope.setActive = function(type) {
+			$rootScope.active = type;
+		};
+
+	})
+
 	// controller for progress table
 	.controller('ProgressCtrl', function ($scope) {
 
