@@ -1,6 +1,6 @@
 <header>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
+		<div class="container" ng-controller="NavbarBtnCtrl">
 			<div class="navbar-header">
 				<a class="navbar-brand navbarLogo" ng-click="setActive('app')" ui-sref="app" title="PSB-Turtle">
 					<img src="images/navLogo.png" alt="PSB-Turtle"/>
@@ -32,9 +32,6 @@
 					<p>The Sea Turtle Ecology and Population Dynamics group at the NEFSC is tasked with collecting information from sea turtles, analyzing data, and building statistical and simulation models to better understand the ecology of sea turtles in the Greater Atlantic region.</p>
 					<a class="btn btn-info" style="text-shadow: 0px 0px;" href="https://www.nefsc.noaa.gov/psb/turtles/" role="button">Learn more <span class="fa fa-angle-double-right fa-1x"></span></a>
 				</div>
-			</div>
-			<div>
-				{{ state | json }}
 			</div>
 		</div>
 	</div>
