@@ -1,60 +1,38 @@
-<div ng-controller="NavbarBtnCtrl">
-	<header>
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand navbarLogo" ng-click="setActive('app')" ui-sref="app" title="PSB-Turtle">
-						<img src="images/navLogo.png" alt="PSB-Turtle"/>
-					</a>
-					<button class="navbar-toggle" type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="navbar-collapse collapse" uib-collapse="navCollapsed">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<form class="btn-group">
-								<a class="btn navbar-btn" ng-class="isActive('app') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app')" ui-sref="app"><span class="glyphicon glyphicon-home gi-1x"></span> Home</a>
-								<a class="btn navbar-btn" ng-class="isActive('app.about') || isActive('app.shiny') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app.about')" ui-sref="app.about"><span class="glyphicon glyphicon-info-sign gi-1x"></span> About</a>
-							</form>
-						</li>
-					</ul>
-				</div>
+<header>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container" ng-controller="NavbarBtnCtrl">
+			<div class="navbar-header">
+				<a class="navbar-brand navbarLogo" ng-click="setActive('app')" ui-sref="app" title="PSB-Turtle">
+					<img src="images/navLogo.png" alt="PSB-Turtle"/>
+				</a>
+				<button class="navbar-toggle" type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" uib-collapse="navCollapsed">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="btn-group">
+							<a class="btn navbar-btn" ng-class="isActive('app') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app')" ui-sref="app"><span class="glyphicon glyphicon-home gi-1x"></span> Home</a>
+							<a class="btn navbar-btn" ng-class="isActive('app.about') || isActive('app.shiny') ? 'navbar-btn-active' : 'navbar-btn-inactive'" ng-click="setActive('app.about')" ui-sref="app.about"><span class="glyphicon glyphicon-info-sign gi-1x"></span> About</a>
+						</form>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</div>
 
-		<div class="jumbotron">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h1>Sea Turtle Ecology <br>&amp; Population Dynamics</h1>
-						<p>The Sea Turtle Ecology and Population Dynamics group at the NEFSC is tasked with collecting information from sea turtles, analyzing data, and building statistical and simulation models to better understand the ecology of sea turtles in the Greater Atlantic region.</p>
-						<a class="btn btn-info" style="text-shadow: 0px 0px;" href="https://www.nefsc.noaa.gov/psb/turtles/" role="button">Learn more <span class="fa fa-angle-double-right fa-1x"></span></a>
-					</div>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Sea Turtle Ecology <br>&amp; Population Dynamics</h1>
+					<p>The Sea Turtle Ecology and Population Dynamics group at the NEFSC is tasked with collecting information from sea turtles, analyzing data, and building statistical and simulation models to better understand the ecology of sea turtles in the Greater Atlantic region.</p>
+					<a class="btn btn-info" style="text-shadow: 0px 0px;" href="https://www.nefsc.noaa.gov/psb/turtles/" role="button">Learn more <span class="fa fa-angle-double-right fa-1x"></span></a>
 				</div>
 			</div>
 		</div>
-	</header>
-	<footer>
-		<div class="footer">
-			<div class="container">
-				<div class="row"> 
-					<div class="col-xs-4">
-						<a href="https://www.commerce.gov/" title = "DoC"><img style="margin-right: 10px;" src="images/commerce.png" alt="DoC"></a>
-						<a href="http://www.noaa.gov/" title = "NOAA"><img src="images/noaa.png" alt="NOAA"></a>
-						<br>
-						<p style="margin-top: 5px;"><small>Copyright © 2020<br><a ng-click="setActive('app')" ui-sref="app.terms">Credits &amp; Disclaimer</a><br>NOAA Fisheries<br>All rights reserved.<br><a href="mailto:joshua.hatch@noaa.gov">Webmaster</a></small>
-			</div>
-					<div class="col-xs-4 text-center">
-					</div>
-					<div class="col-xs-4 text-right">
-						<a href="https://www.nefsc.noaa.gov/psb/" title="PSB"><img src="images/psb.png" alt="PSB"></a>
-						<p><small>Protected Species Branch<br>Northeast Fisheries Science Center<br>National Marine Fisheries Service<br>166 Water Street<br>Woods Hole, MA 02543<br></small></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-</div>
+	</div>
+</header>
