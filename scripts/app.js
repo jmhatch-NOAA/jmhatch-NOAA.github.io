@@ -15,9 +15,8 @@ angular.module('seaturtleApp', ['ui.router', 'ui.bootstrap'])
 		'footer' : {
 			templateUrl : 'views/footer.html'
 		}
-            },
-	    controller: 'NavbarBtnCtrl'
-        })
+            }
+    	})
 	
 	.state('app.about', {
 		url:'about',
